@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style>
+            table,tr,th{
+                border:none;
+                background-color: rgb(255,255,255,0.1);  
+            }
+            input[type="text"],select,input[type="password"],input[type="number"],input[type="date"]{
+
+                width:170px
+
+             }
+
+
+        </style>
+    </head>
+
+    <body style="background-image: url('bg.jpg'); width: 400px; height: 400px; margin-left: 30%; background-repeat: no-repeat ;background-size: 150%;">
+        <h1 style="color: black; text-align: center;"> REGISTRATION  FORM</h1>
+        <table width="100%"cellpadding="10">
+            <tr>
+                <th><label>NAME:</label></th>
+                <th><input type="text" name="tname" size=18 autofocus=required required></th>
+            </tr>
+            <tr>
+                <th><label>AGE:</label></th>
+                <th><input type="number" name="tage" maxlength="3" size=3></th>
+            </tr>
+            <tr>
+                <th><label>DATE OF BIRTH:</label></th>
+                <th><input type="date" name="tbirth"></th>
+            </tr>
+            <tr>
+                <th><label>ADDRESS:</label></th>
+                <th><textarea name="taddress" rows="5" cols="20" placeholder="Must include your pincode" autofocus=required required ></textarea></th>
+            </tr>
+            <tr>
+                <th><label>SEX:</label></th>
+                <th><input type="radio" id="female" checked="true"><label for="female">FEMALE</label><input type="radio" id="male"><label for="male">MALE</label></th>
+            </tr>
+            <tr>
+                <th><label>NATIONALITY:</label></th>
+                <th><select>
+                    <option selected="" value="default">Please select a country</option>
+                    <option value="India">India</option>
+                    <option value="Australia">Australia</option>
+                    <option value="China">China</option>
+            </select></th>
+            </tr>
+            <tr>
+                <th><label>LANGUAGE KNOWN:</label></th>
+                <th align="left"><input type="checkbox" id="eng" name="eng"><label  for="eng">ENGLISH</label><br>
+                    <input  type="checkbox" id="hindi" name="hindi"><label  for="hindi">HINDI</label><br>
+                    <input type="checkbox" id="mal" name="mal"><label for="mal">MALAYALAM</label>
+                </th>
+            </tr>
+            <tr>
+                <th><label>PASSWORD:</label></th>
+                <th><input type="password" name="tpass" size=18></th>
+            </tr>
+            <tr>
+                <th colspan="2"><input type="submit" name="submit" value="SUBMIT"> <input type="reset" name="reset" value="RESET"> </th>
+            </tr>
+    </table>
+
+   
+    </body>
+</html>
