@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>online exam</title>
+        <script>
+            function calc()
+            {
+                var score=0;
+                if(document.getElementById("four").checked)
+                {
+                    score++;
+                }
+                if(document.getElementById("ht3").checked)
+                {
+                    score++;
+                }
+                if(document.getElementById("m3").checked)
+                {
+                    score++;
+                }
+                if(document.getElementById("a1").checked)
+                {
+                    score++;
+                }
+                document.write("Total exam score is "+score);
+            }
+        </script>
+    </head>
+    <body>
+        <form name="form1">
+            <h1 style="text-align: center;">ONLINE EXAM</h1>
+            <table cellpadding="5px" border="10px">
+                <tr><th>Question</th><th>Option A</th><th>Option B</th><th>Option C</th><th>Option D</th></tr>
+                <tr><td>what is 2+2?</td>
+                    <td><input type="radio" id="five" ><label for="five">5</label></td>
+                    <td><input type="radio" id="four"><label for="four">4</label></td>
+                    <td><input type="radio" id="zero" ><label for="zero">3</label></td>
+                    <td><input type="radio" id="one" ><label for="one">1</label></td>
+                </tr>
+                <tr><td>HTML stands for</td>
+                    <td><input type="radio" id="ht1" ><label for="ht1">hyper text mark language</label></td>
+                    <td><input type="radio" id="ht2" ><label for="ht2">hype text mark language</label></td>
+                    <td><input type="radio" id="ht3" ><label for="ht3">hyper text markup language</label></td>
+                    <td><input type="radio" id="ht4" ><label for="ht4">hyper text mark lang</label></td>
+
+                </tr>
+            
+                <tr><td>what is 5*3</td>
+                    <td><input type="radio" id="m1" ><label for="m1">25</label></td>
+                    <td><input type="radio" id="m2" ><label for="m2">75</label></td>
+                    <td><input type="radio" id="m3" ><label for="m3">15</label></td>
+                    <td><input type="radio" id="m4" ><label for="m4">39</label></td>
+                </tr>
+                <tr><td>what is ASCII value of a</td>
+                    <td><input type="radio" id="a1" ><label for="a1">97</label></td>
+                    <td><input type="radio" id="a2" ><label for="a2">101</label></td>
+                    <td><input type="radio" id="a3" ><label for="a3">43</label></td>
+                    <td><input type="radio" id="a4" ><label for="a4">187</label></td>
+                    
+                </tr>
+                <tr>
+                    <th colspan="5"><input type="button" onclick="calc()" value="submit"></th>
+                </tr>
+            </table>
+
+        </form>
+    </body>
+</html>
